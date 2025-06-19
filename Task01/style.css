@@ -1,0 +1,9 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+.flex-container > p {
+  border: 2px dashed red;
+  padding: 40px;
+}
