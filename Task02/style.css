@@ -54,17 +54,20 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
-
+.signin button:hover {
+  background-color: rgb(111, 111, 215);
+  color: rgb(110, 251, 105);
+}
 .container2 {
   width: 100%;
   padding: 100px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .content {
   position: relative;
   z-index: 1;
+  margin-right: 81px;
 }
 
 .content h1 {
@@ -90,6 +93,10 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
+.content button:hover {
+  background-color: #9b948e;
+  color: bisque;
+}
 .image {
   position: relative;
 }
@@ -97,6 +104,7 @@ body {
   width: 500px;
   height: 500px;
   border-radius: 50%;
+  padding-bottom: 15px;
   object-fit: cover;
 }
 .button-play {
@@ -108,8 +116,8 @@ body {
 
 .box {
   position: absolute;
-  bottom: 0px;
-  left: 20%;
+  bottom: 0%;
+  left: 21%;
   transform: translateX(-50%);
   border-radius: 20px;
   background: #fff;
