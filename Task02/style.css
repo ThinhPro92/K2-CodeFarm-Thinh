@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background: linear-gradient(293deg, #e6e6e4 7.23%, #f0e8e2 97.74%);
 }
 html {
   font-family: Poppins;
@@ -11,12 +10,18 @@ html {
   line-height: normal;
   font-weight: 400;
 }
+body {
+  background: linear-gradient(293deg, #e6e6e4 7.23%, #f0e8e2 97.74%);
+}
 .wrap {
   padding: 10px 100px;
-  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 .menu {
   display: flex;
@@ -46,6 +51,8 @@ html {
   width: 110px;
   height: 45px;
   flex-shrink: 0;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .container2 {
@@ -56,7 +63,6 @@ html {
   align-items: center;
 }
 .content {
-  max-width: 50%;
   position: relative;
   z-index: 1;
 }
@@ -81,15 +87,17 @@ html {
   flex-shrink: 0;
   border: none;
   font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 .image {
-  max-width: 50%;
   position: relative;
 }
 .image img {
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
-  width: 600px;
-  height: 600px;
+  object-fit: cover;
 }
 .button-play {
   position: absolute;
@@ -105,7 +113,7 @@ html {
   transform: translateX(-50%);
   border-radius: 20px;
   background: #fff;
-  padding: 15px 30px;
+  padding: 15px 50px 10px 15px;
 }
 
 .box h1 {
@@ -126,7 +134,7 @@ html {
   background: #ffffff;
   display: flex;
   justify-content: center;
-  gap: 2px;
+  gap: 5px;
   margin-bottom: 20px;
 }
 
@@ -207,6 +215,7 @@ html {
   height: 336px;
   object-fit: cover;
   background: #fff;
+  margin-bottom: 20px;
 }
 
 .brand h1 {
@@ -225,10 +234,6 @@ html {
 }
 
 .path {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  z-index: 1;
 }
