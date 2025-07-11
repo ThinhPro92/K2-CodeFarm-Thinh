@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- reset css -->
+
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+
+    <!-- boostrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- common css -->
+    <link rel="stylesheet" href="./assets/styles/common.css" />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="header-top__container">
+          <p class="header-top__text">
+            Sign up and get 20% off to your first order.
+            <a href="./signup">Sign Up Now</a>
+          </p>
+          <button class="header-top__close" aria-label="Close">&times;</button>
+        </div>
+      </div>
+      <div class="header-main">
+        <div class="header-main__container">
+          <div class="logo"><a href="/">SHOP.CO</a></div>
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a href="/shop" class="main-menu__link"
+                  >Shop <i class="fa-solid fa-chevron-down main-menu__arrow"></i
+                ></a>
+              </li>
+              <li class="main-menu__item">
+                <a href="./product-detail.html" class="main-menu__link"
+                  >On Sale</a
+                >
+              </li>
+              <li class="main-menu__item">
+                <a href="./cart.html" class="main-menu__link">New Arrivals</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="./category.html" class="main-menu__link">Brands</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="search-bar">
+            <span class="search-bar__icon"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            <input
+              type="text"
+              class="search-bar__input"
+              placeholder="Search for products..."
+            />
+          </div>
+          <div class="user-control">
+            <button class="btn user-btn" title="Cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="btn user-btn" title="Account">
+              <i class="fa-solid fa-user"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="banner">
+      <div class="banner-container">
+        <div class="banner-content">
+          <h1 class="banner-title">
+            FIND CLOTHES <br />
+            THAT MATCHES <br />
+            YOUR STYLE
+          </h1>
+          <p class="banner-desc">
+            Browse through our diverse range of meticulously crafted garments,
+            designed <br />
+            to bring out your individuality and cater to your sense of style.
+          </p>
+          <button class="button button--medium banner-shop-btn">
+            Shop Now
+          </button>
+          <div class="banner-info">
+            <div class="banner-info-item">
+              <span class="banner-info-number">200+</span>
+              <span class="banner-info-label">International Brands</span>
+            </div>
+            <div class="banner-info-divider"></div>
+            <div class="banner-info-item">
+              <span class="banner-info-number">2,000+</span>
+              <span class="banner-info-label">High-Quality Products</span>
+            </div>
+            <div class="banner-info-divider"></div>
+            <div class="banner-info-item">
+              <span class="banner-info-number">30,000+</span>
+              <span class="banner-info-label">Happy Customers</span>
+            </div>
+          </div>
+        </div>
+        <div class="banner-image">
+          <img src="./assets/imgs/banner.png" alt="Banner" />
+        </div>
+      </div>
+      <div class="brand-bar">
+        <span class="brand-logo"
+          ><img src="./assets/imgs/bn1.png" alt="Brand 1"
+        /></span>
+        <span class="brand-logo"
+          ><img src="./assets/imgs/bn2.png" alt="Brand 2"
+        /></span>
+        <span class="brand-logo"
+          ><img src="./assets/imgs/bn3.png" alt="Brand 3"
+        /></span>
+        <span class="brand-logo"
+          ><img src="./assets/imgs/bn4.png" alt="Brand 4"
+        /></span>
+        <span class="brand-logo"
+          ><img src="./assets/imgs/bn5.png" alt="Brand 5"
+        /></span>
+      </div>
+    </section>
+
+    <section class="arrivals">
+      <h2 class="product-section-title">NEW ARRIVALS</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/imgs/2.png" alt="T-shirt with Tape Details" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">T-shirt with Tape Details</div>
+            <div class="product-rating">
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+              <span class="rating-score">4.5/</span
+              ><span class="rating-max">5</span>
+            </div>
+            <div class="product-price">
+              <span>$120</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/imgs/3.png" alt="Skinny Fit Jeans" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Skinny Fit Jeans</div>
+            <div class="product-rating">
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+              <span class="rating-score">3.5/</span
+              ><span class="rating-max">5</span>
+            </div>
+            <div class="product-price">
+              <span>$240</span>
+              <span class="product-price-old">$260</span>
+              <span class="product-price-sale"> -20%</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/imgs/0.png" alt="Checkered Shirt" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Checkered Shirt</div>
+            <div class="product-rating">
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+              <span class="rating-score">4.5/</span
+              ><span class="rating-max">5</span>
+            </div>
+            <div class="product-price">
+              <span>$180</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/imgs/4.png" alt="Sleeve Striped T-shirt" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Sleeve Striped T-shirt</div>
+            <div class="product-rating">
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+              <span class="rating-score">4.5/</span
+              ><span class="rating-max">5</span>
+            </div>
+            <div class="product-price">
+              <span>$130</span>
+              <span class="product-price-old">$160</span>
+              <span class="product-price-sale"> -30%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-section-action">
+        <button class="button button--medium product-viewall-btn">
+          View All
+        </button>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section class="arrivals">
+      <h2 class="product-section-title">top selling</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/imgs/5.png" alt="Vertical Striped Shirt" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Vertical Striped Shirt</div>
+            <div class="product-rating">
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <span class="rating-score">5/</span
+              ><span class="rating-max">5</span>
+            </div>
+            <div class="product-price">
+              <span>$212</span>
+              <span class="product-price-old">$232</span>
+              <span class="product-price-sale"> -20%</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/imgs/6.png" alt="Courage Graphic T-Shirt" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Courage Graphic T-Shirt</div>
+            <div class="product-rating">
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <span class="rating-score">4.0/</span
+              ><span class="rating-max">5</span>
+            </div>
+            <div class="product-price">
+              <span>$145</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/imgs/7.png" alt="Loose Fit Bermuda Shorts" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Loose Fit Bermuda Shorts</div>
+            <div class="product-rating">
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <span class="rating-score">3.0/</span
+              ><span class="rating-max">5</span>
+            </div>
+            <div class="product-price">
+              <span>$80</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/imgs/8.png" alt="Faded Skinny Jeans" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Faded Skinny Jeans</div>
+            <div class="product-rating">
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+              <span class="rating-score">4.5/</span
+              ><span class="rating-max">5</span>
+            </div>
+            <div class="product-price">
+              <span>$210</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-section-action">
+        <button class="button button--medium product-viewall-btn">
+          View All
+        </button>
+      </div>
+    </section>
+    <section id="category-section" class="category-section">
+      <h2 class="category-section-title">BROWSE BY DRESS STYLE</h2>
+      <div class="category-grid">
+        <div class="category-card car1">
+          <img
+            src="./assets/imgs/footer1.png"
+            alt="Casual"
+            class="category-img"
+          />
+          <div class="category-label">Casual</div>
+        </div>
+        <div class="category-card car2">
+          <img
+            src="./assets/imgs/footer2.png"
+            alt="Formal"
+            class="category-img"
+          />
+          <div class="category-label">Formal</div>
+        </div>
+        <div class="category-card car3">
+          <img
+            src="./assets/imgs/footer3.png"
+            alt="Party"
+            class="category-img"
+          />
+          <div class="category-label">Party</div>
+        </div>
+        <div class="category-card car4">
+          <img src="./assets/imgs/footer4.png" alt="Gym" class="category-img" />
+          <div class="category-label">Gym</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="feedback">
+      <div class="feedback-header">
+        <h2 class="feedback-title">OUR HAPPY CUSTOMERS</h2>
+        <div class="feedback-arrows">
+          <img class="arrow" src="./assets/icons/left.png" alt="left" />
+          <img class="arrow" src="./assets/icons/right.png" alt="right" />
+        </div>
+      </div>
+
+      <div class="feedback-wrapper">
+        <div class="feedback-container">
+          <!-- Box 1 -->
+          <div class="feedback-card faded">
+            <div class="feedback-stars">
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+            </div>
+            <div class="feedback-author">
+              <p>Anna R.</p>
+              <img
+                src="./assets/imgs/image.png"
+                alt="verified"
+                class="check-icon"
+              />
+            </div>
+            <p class="feedback-content">
+              "Great customer support and fast shipping. Will definitely shop
+              again!"
+            </p>
+          </div>
+
+          <!-- Box 2 -->
+          <div class="feedback-card">
+            <div class="feedback-stars">
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+            </div>
+            <div class="feedback-author">
+              <p>Sarah M.</p>
+              <img
+                src="./assets/imgs/image.png"
+                alt="verified"
+                class="check-icon"
+              />
+            </div>
+            <p class="feedback-content">
+              "I'm blown away by the quality and style of the clothes I received
+              from Shop.co. From casual wear to elegant dresses, every piece
+              I've bought has exceeded my expectations.”
+            </p>
+          </div>
+
+          <!-- Box 3 -->
+          <div class="feedback-card">
+            <div class="feedback-stars">
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+            </div>
+            <div class="feedback-author">
+              <p>Alex K.</p>
+              <img
+                src="./assets/imgs/image.png"
+                alt="verified"
+                class="check-icon"
+              />
+            </div>
+            <p class="feedback-content">
+              "As someone who's always on the lookout for unique fashion pieces,
+              I'm thrilled to have stumbled upon Shop.co. The selection of
+              clothes is not only diverse but also on-point with the latest
+              trends.”
+            </p>
+          </div>
+
+          <!-- Box 4 -->
+          <div class="feedback-card">
+            <div class="feedback-stars">
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+            </div>
+            <div class="feedback-author">
+              <p>James L.</p>
+              <img
+                src="./assets/imgs/image.png"
+                alt="verified"
+                class="check-icon"
+              />
+            </div>
+            <p class="feedback-content">
+              "As someone who's always on the lookout for unique fashion pieces,
+              I'm thrilled to have stumbled upon Shop.co. The selection of
+              clothes is not only diverse but also on-point with the latest
+              trends.”
+            </p>
+          </div>
+
+          <!-- Box 5 -->
+          <div class="feedback-card faded">
+            <div class="feedback-stars">
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+              <img src="./assets/imgs/star.png" alt="star" />
+            </div>
+            <div class="feedback-author">
+              <p>Emma W.</p>
+              <img
+                src="./assets/imgs/image.png"
+                alt="verified"
+                class="check-icon"
+              />
+            </div>
+            <p class="feedback-content">
+              "Love the product quality and packaging. Everything looks
+              premium."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-top-content">
+          <div class="footer-top-left">
+            <h2 class="footer-top-title">
+              STAY UPTO DATE ABOUT <br />OUR LATEST OFFERS
+            </h2>
+          </div>
+          <form class="footer-top-right" autocomplete="off">
+            <div class="input-wrapper">
+              <i class="fa-regular fa-envelope"></i>
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+            <button type="submit">Subscribe to Newsletter</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-main">
+          <div class="footer-column logo-section">
+            <h3 class="footer-logo">SHOP.CO</h3>
+            <p>
+              We have clothes that suits your style and <br />
+              which you’re proud to wear. From <br />
+              women to men.
+            </p>
+            <div class="footer-socials">
+              <img src="./assets/imgs/SOCIAL.png" alt="Socials" />
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="#">Customer Support</a></li>
+              <li><a href="#">Delivery Details</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>FAQ</h4>
+            <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Manage Deliveries</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">Payments</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Free eBooks</a></li>
+              <li><a href="#">Development Tutorial</a></li>
+              <li><a href="#">How to - Blog</a></li>
+              <li><a href="#">Youtube Playlist</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-credit">
+        <p>Shop.co © 2020-2025, All Rights Reserved</p>
+        <div class="footer-payment">
+          <img src="./assets/imgs/card.png" alt="Payment methods" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- boostrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

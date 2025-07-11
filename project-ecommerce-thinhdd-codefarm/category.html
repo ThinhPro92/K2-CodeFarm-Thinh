@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category</title>
+    <!-- reset css -->
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <!-- boostrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/styles/category.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="header-top__container">
+          <p class="header-top__text">
+            Sign up and get 20% off to your first order.
+            <a href="./signup">Sign Up Now</a>
+          </p>
+          <button class="header-top__close" aria-label="Close">×</button>
+        </div>
+      </div>
+      <div class="header-main">
+        <div class="header-main__container">
+          <div class="logo"><a href="/">SHOP.CO</a></div>
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a href="/shop" class="main-menu__link"
+                  >Shop <i class="fa-solid fa-chevron-down main-menu__arrow"></i
+                ></a>
+              </li>
+              <li class="main-menu__item">
+                <a href="/sale" class="main-menu__link">On Sale</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="/arrivals" class="main-menu__link">New Arrivals</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="/brands" class="main-menu__link">Brands</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="search-bar">
+            <span class="search-bar__icon"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            <input
+              type="text"
+              class="search-bar__input"
+              placeholder="Search for products..."
+            />
+          </div>
+          <div class="user-control">
+            <button class="btn user-btn" title="Cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="btn user-btn" title="Account">
+              <i class="fa-solid fa-user"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="breadcrumb">
+        <a href="/" style="color: rgba(0, 0, 0, 0.6)">Home</a>
+        <span class="breadcrumb-separator"> > </span>
+        <a href="/shop">Casual</a>
+      </div>
+    </header>
+
+    <section class="category-section">
+      <div class="category-filter">
+        <div class="filter-header">
+          <h3 class="filter-title">Filters</h3>
+          <img
+            src="./assets/icons/chiu.png"
+            alt="Filter Icon"
+            class="filter-icon"
+          />
+        </div>
+        <hr class="footer-divider" />
+        <div class="filter-group">
+          <ul class="filter-list">
+            <li>T-shirts</li>
+            <li>Shorts</li>
+            <li>Shirts</li>
+            <li>Hoodie</li>
+            <li>Jeans</li>
+          </ul>
+        </div>
+        <hr class="footer-divider" />
+        <div class="filter-group">
+          <div class="filter-title">
+            <span>Price</span>
+            <span class="dropdown-icon">⌄</span>
+          </div>
+          <div class="price-slider">
+            <img src="assets/icons/price.png" alt="" />
+            <div class="price-labels">
+              <span>$50</span>
+              <span>$200</span>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="filter-group">
+          <div class="filter-title">
+            <span>Colors</span>
+            <span class="dropdown-icon">⌄</span>
+          </div>
+          <div class="color-palette">
+            <span class="color-dot" style="background: #000"></span>
+            <span class="color-dot" style="background: #f00"></span>
+            <span class="color-dot" style="background: #0f0"></span>
+            <span class="color-dot" style="background: #00f"></span>
+            <span class="color-dot" style="background: #ff0"></span>
+            <span class="color-dot" style="background: #0ff"></span>
+            <span class="color-dot" style="background: #f0f"></span>
+            <span
+              class="color-dot"
+              style="background: #fff; border: 1px solid #ccc"
+            ></span>
+            <span class="color-dot" style="background: #ffa500"></span>
+            <span class="color-dot" style="background: #800080"></span>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="filter-group">
+          <div class="filter-title">
+            <span>Size</span>
+            <span class="dropdown-icon">⌄</span>
+          </div>
+          <div class="size-options">
+            <span class="size">XX-Small</span>
+            <span class="size">X-Small</span>
+            <span class="size">Small</span>
+            <span class="size">Medium</span>
+            <span class="size active">Large</span>
+            <span class="size">X-Large</span>
+            <span class="size">XX-Large</span>
+            <span class="size">3X-Large</span>
+            <span class="size">4X-Large</span>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="filter-group">
+          <div class="filter-title">
+            <span>Dress Style</span>
+            <span class="dropdown-icon"></span>
+          </div>
+          <ul class="filter-list">
+            <li>Casual</li>
+            <li>Formal</li>
+            <li>Party</li>
+            <li>Gym</li>
+          </ul>
+        </div>
+
+        <button class="button filter-apply">Apply Filter</button>
+      </div>
+
+      <div class="category-products">
+        <div class="category-header-row">
+          <h2 class="product-section-title">Casual</h2>
+          <div class="product-sort-wrapper">
+            <span class="sort-label">Showing 1–10 of 100 Products</span>
+            <div class="sort-display">
+              Sort by: <span class="sort-value">Most Popular</span>
+              <span class="sort-icon">▼</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./assets/imgs/image 1.png"
+                alt="Gradient Graphic T-shirt"
+              />
+            </div>
+            <div class="product-info">
+              <div class="product-title">Gradient Graphic T-shirt</div>
+              <div class="product-rating">
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+                <span class="rating-score">4.5/</span
+                ><span class="rating-max">5</span>
+              </div>
+              <div class="product-price">
+                <span>$260</span><span class="product-price-old">$300</span
+                ><span class="product-price-sale"> -40%</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./assets/imgs/3.png" alt="Polo with Tipping Details" />
+            </div>
+            <div class="product-info">
+              <div class="product-title">Polo with Tipping Details</div>
+              <div class="product-rating">
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+                <span class="rating-score">4.5/</span
+                ><span class="rating-max">5</span>
+              </div>
+              <div class="product-price">
+                <span>$145</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./assets/imgs/4.png" alt="Black Striped T-shirt" />
+            </div>
+            <div class="product-info">
+              <div class="product-title">Black Striped T-shirt</div>
+              <div class="product-rating">
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+                <span class="rating-score">4.5/</span
+                ><span class="rating-max">5</span>
+              </div>
+              <div class="product-price">
+                <span>$120</span><span class="product-price-old">$160</span
+                ><span class="product-price-sale"> -30%</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./assets/imgs/image 1.png"
+                alt="Gradient Graphic T-shirt"
+              />
+            </div>
+            <div class="product-info">
+              <div class="product-title">Gradient Graphic T-shirt</div>
+              <div class="product-rating">
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+                <span class="rating-score">4.5/</span
+                ><span class="rating-max">5</span>
+              </div>
+              <div class="product-price">
+                <span>$260</span><span class="product-price-old">$300</span
+                ><span class="product-price-sale"> -40%</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./assets/imgs/image 1.png"
+                alt="Gradient Graphic T-shirt"
+              />
+            </div>
+            <div class="product-info">
+              <div class="product-title">Gradient Graphic T-shirt</div>
+              <div class="product-rating">
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+                <span class="rating-score">4.5/</span
+                ><span class="rating-max">5</span>
+              </div>
+              <div class="product-price">
+                <span>$260</span><span class="product-price-old">$300</span
+                ><span class="product-price-sale"> -40%</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./assets/imgs/image 1.png"
+                alt="Gradient Graphic T-shirt"
+              />
+            </div>
+            <div class="product-info">
+              <div class="product-title">Gradient Graphic T-shirt</div>
+              <div class="product-rating">
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+                <span class="rating-score">4.5/</span
+                ><span class="rating-max">5</span>
+              </div>
+              <div class="product-price">
+                <span>$260</span><span class="product-price-old">$300</span
+                ><span class="product-price-sale"> -40%</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./assets/imgs/image 1.png"
+                alt="Gradient Graphic T-shirt"
+              />
+            </div>
+            <div class="product-info">
+              <div class="product-title">Gradient Graphic T-shirt</div>
+              <div class="product-rating">
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+                <span class="rating-score">4.5/</span
+                ><span class="rating-max">5</span>
+              </div>
+              <div class="product-price">
+                <span>$260</span><span class="product-price-old">$300</span
+                ><span class="product-price-sale"> -40%</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./assets/imgs/image 1.png"
+                alt="Gradient Graphic T-shirt"
+              />
+            </div>
+            <div class="product-info">
+              <div class="product-title">Gradient Graphic T-shirt</div>
+              <div class="product-rating">
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+                <span class="rating-score">4.5/</span
+                ><span class="rating-max">5</span>
+              </div>
+              <div class="product-price">
+                <span>$260</span><span class="product-price-old">$300</span
+                ><span class="product-price-sale"> -40%</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./assets/imgs/image 1.png"
+                alt="Gradient Graphic T-shirt"
+              />
+            </div>
+            <div class="product-info">
+              <div class="product-title">Gradient Graphic T-shirt</div>
+              <div class="product-rating">
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/star.png" alt="star" class="star" />
+                <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+                <span class="rating-score">4.5/</span
+                ><span class="rating-max">5</span>
+              </div>
+              <div class="product-price">
+                <span>$260</span><span class="product-price-old">$300</span
+                ><span class="product-price-sale"> -40%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+
+        <div class="pagination-wrapper">
+          <button class="page-nav prev">
+            <span class="arrow">←</span> Previous
+          </button>
+
+          <div class="page-numbers">
+            <button class="page-number active">1</button>
+            <button class="page-number">2</button>
+            <button class="page-number">3</button>
+            <span class="page-dots">...</span>
+            <button class="page-number">8</button>
+            <button class="page-number">9</button>
+            <button class="page-number">10</button>
+          </div>
+
+          <button class="page-nav next">
+            Next <span class="arrow">→</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-top-content">
+          <div class="footer-top-left">
+            <h2 class="footer-top-title">
+              STAY UPTO DATE ABOUT <br />OUR LATEST OFFERS
+            </h2>
+          </div>
+          <form class="footer-top-right" autocomplete="off">
+            <div class="input-wrapper">
+              <i class="fa-regular fa-envelope"></i>
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+            <button type="submit">Subscribe to Newsletter</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-main">
+          <div class="footer-column logo-section">
+            <h3 class="footer-logo">SHOP.CO</h3>
+            <p>
+              We have clothes that suits your style and <br />
+              which you’re proud to wear. From <br />
+              women to men.
+            </p>
+            <div class="footer-socials">
+              <img src="./assets/imgs/SOCIAL.png" alt="Socials" />
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="#">Customer Support</a></li>
+              <li><a href="#">Delivery Details</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>FAQ</h4>
+            <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Manage Deliveries</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">Payments</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Free eBooks</a></li>
+              <li><a href="#">Development Tutorial</a></li>
+              <li><a href="#">How to - Blog</a></li>
+              <li><a href="#">Youtube Playlist</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-credit">
+        <p>Shop.co © 2020-2025, All Rights Reserved</p>
+        <div class="footer-payment">
+          <img src="./assets/imgs/card.png" alt="Payment methods" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- boostrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail</title>
+    <!-- reset css -->
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <!-- boostrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/styles/detail.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="header-top__container">
+          <p class="header-top__text">
+            Sign up and get 20% off to your first order.
+            <a href="./signup">Sign Up Now</a>
+          </p>
+          <button class="header-top__close" aria-label="Close">×</button>
+        </div>
+      </div>
+      <div class="header-main">
+        <div class="header-main__container">
+          <div class="logo"><a href="/">SHOP.CO</a></div>
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a href="/shop" class="main-menu__link"
+                  >Shop <i class="fa-solid fa-chevron-down main-menu__arrow"></i
+                ></a>
+              </li>
+              <li class="main-menu__item">
+                <a href="/sale" class="main-menu__link">On Sale</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="/arrivals" class="main-menu__link">New Arrivals</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="/brands" class="main-menu__link">Brands</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="search-bar">
+            <span class="search-bar__icon"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            <input
+              type="text"
+              class="search-bar__input"
+              placeholder="Search for products..."
+            />
+          </div>
+          <div class="user-control">
+            <button class="btn user-btn" title="Cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="btn user-btn" title="Account">
+              <i class="fa-solid fa-user"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="breadcrumb">
+        <a href="/" style="color: rgba(0, 0, 0, 0.6)">Home</a>
+        <span class="breadcrumb-separator"> > </span>
+        <a href="/" style="color: rgba(0, 0, 0, 0.6)">Shop</a>
+        <span class="breadcrumb-separator"> > </span>
+        <a href="/" style="color: rgba(0, 0, 0, 0.6)">Men</a>
+        <span class="breadcrumb-separator"> > </span>
+        <a href="/shop">T-shirts</a>
+      </div>
+    </header>
+
+    <section class="product-detail">
+      <div class="product-images">
+        <div class="thumbnail-grid">
+          <img
+            src="./assets/imgs/cart1.3.png"
+            alt="Thumbnail 1"
+            class="thumbnail thumbnail1"
+          />
+          <img
+            src="./assets/imgs/cart2.png"
+            alt="Thumbnail 2"
+            class="thumbnail"
+          />
+          <img
+            src="./assets/imgs/cart3.png"
+            alt="Thumbnail 3"
+            class="thumbnail"
+          />
+        </div>
+        <img
+          src="./assets/imgs/image 1.png"
+          alt="Main Image"
+          class="main-image"
+        />
+      </div>
+      <div class="product-content">
+        <h1 class="product-title-1">ONE LIFE GRAPHIC T-SHIRT</h1>
+        <div class="product-rating">
+          <img src="./assets/imgs/star.png" alt="star" class="star" />
+          <img src="./assets/imgs/star.png" alt="star" class="star" />
+          <img src="./assets/imgs/star.png" alt="star" class="star" />
+          <img src="./assets/imgs/star.png" alt="star" class="star" />
+          <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+          <span class="rating-score">4.5</span
+          ><span class="rating-max">/5</span>
+        </div>
+        <div class="product-price">
+          <span class="price-current">$260</span>
+          <span class="price-old">$300</span>
+          <span class="product-price-sale"> -40%</span>
+        </div>
+        <p class="product-desc">
+          This graphic t-shirt which is perfect for any occasion. Crafted from a
+          soft and <br />breathable fabric, it offers superior comfort and
+          style.
+        </p>
+        <hr class="footer-divider" />
+        <div class="product-options">
+          <label>Select Colors</label>
+          <div class="product-colors">
+            <div
+              class="color-option color-option3 selected"
+              style="background-color: #4f4631"
+            >
+              <i
+                class="fa-solid fa-check"
+                style="color: var(--color-secondary)"
+              ></i>
+            </div>
+            <div
+              class="color-option color-option1"
+              style="background-color: #314f4a"
+            ></div>
+            <div
+              class="color-option color-option2"
+              style="background-color: #31344f"
+            ></div>
+          </div>
+          <hr class="footer-divider" />
+          <label>Choose Size</label>
+          <div class="product-sizes">
+            <button class="size-option button button--small">Small</button>
+            <button class="size-option button button--small">Medium</button>
+            <button class="size-option button button--small button--primary">
+              Large
+            </button>
+            <button class="size-option button button--small">X-Large</button>
+          </div>
+          <hr class="footer-divider" />
+          <div class="product-quantity">
+            <div class="quantity-control">
+              <div class="input-wrapper">
+                <button class="quantity-btn">-</button>
+                <input
+                  type="number"
+                  min="1"
+                  value="1"
+                  class="quantity-input"
+                  readonly
+                />
+                <button class="quantity-btn">+</button>
+              </div>
+              <button class="button button--medium product-add-cart">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-tabs">
+      <ul
+        class="nav nav-tabs justify-content-center"
+        id="productTab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="details-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#details"
+            type="button"
+            role="tab"
+            aria-controls="details"
+            aria-selected="true"
+          >
+            Product Details
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="reviews-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#reviews"
+            type="button"
+            role="tab"
+            aria-controls="reviews"
+            aria-selected="false"
+          >
+            Rating & Reviews
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="faqs-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#faqs"
+            type="button"
+            role="tab"
+            aria-controls="faqs"
+            aria-selected="false"
+          >
+            FAQs
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="productTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="details"
+          role="tabpanel"
+          aria-labelledby="details-tab"
+        >
+          <p>
+            Details about the product go here. This section can include material
+            information, care instructions, and other relevant details.
+          </p>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="reviews"
+          role="tabpanel"
+          aria-labelledby="reviews-tab"
+        >
+          <div class="reviews-header">
+            <h3 class="reviews-title">
+              All Reviews <span class="review-count">(451)</span>
+            </h3>
+            <div class="reviews-actions">
+              <button class="btn-filter">
+                <img src="./assets/icons/chiu.png" alt="filter" />
+              </button>
+              <button class="btn-lates">Latest</button>
+              <button class="btn-write">Write a Review</button>
+            </div>
+          </div>
+
+          <div class="reviews-grid">
+            <!-- 6 sample reviews -->
+            <div class="review-box">
+              <div class="star-row">
+                <div class="review-stars">
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/2Star.png" alt="str" />
+                </div>
+                <button class="btn-options">...</button>
+              </div>
+              <div class="review-author">
+                <span>Samantha D.</span>
+                <img
+                  src="./assets/imgs/image.png"
+                  alt="verified"
+                  class="check-icon"
+                />
+              </div>
+              <p class="review-text">
+                "I absolutely love this t-shirt! The design is unique and the
+                fabric feels so comfortable. As a fellow designer, I appreciate
+                the attention to detail. It's become my favorite go-to shirt."
+              </p>
+              <p class="review-date">Posted on August 14, 2023</p>
+            </div>
+
+            <div class="review-box">
+              <div class="star-row">
+                <div class="review-stars">
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/star.png" alt="star" />
+                </div>
+                <button class="btn-options">...</button>
+              </div>
+              <div class="review-author">
+                <span>Alex M.</span>
+                <img
+                  src="./assets/imgs/image.png"
+                  alt="verified"
+                  class="check-icon"
+                />
+              </div>
+              <p class="review-text">
+                "The t-shirt exceeded my expectations! The colors are vibrant
+                and the print quality is top-notch. Being a UI/UX designer
+                myself, I'm quite picky about aesthetics, and this t-shirt
+                definitely gets a thumbs up from me."
+              </p>
+              <p class="review-date">Posted on August 15, 2023</p>
+            </div>
+
+            <div class="review-box">
+              <div class="star-row">
+                <div class="review-stars">
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/2Star.png" alt="str" />
+                </div>
+                <button class="btn-options">...</button>
+              </div>
+
+              <div class="review-author">
+                <span>Ethan R.</span>
+                <img
+                  src="./assets/imgs/image.png"
+                  alt="verified"
+                  class="check-icon"
+                />
+              </div>
+              <p class="review-text">
+                "This t-shirt is a must-have for anyone who appreciates good
+                design. The minimalistic yet stylish pattern caught my eye, and
+                the fit is perfect. I can see the designer's touch in every
+                aspect of this shirt."
+              </p>
+              <p class="review-date">Posted on August 14, 2023</p>
+            </div>
+
+            <div class="review-box">
+              <div class="star-row">
+                <div class="review-stars">
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/star.png" alt="star" />
+                </div>
+                <button class="btn-options">...</button>
+              </div>
+
+              <div class="review-author">
+                <span>Olivia P.</span>
+                <img
+                  src="./assets/imgs/image.png"
+                  alt="verified"
+                  class="check-icon"
+                />
+              </div>
+              <p class="review-text">
+                "As a UI/UX enthusiast, I value simplicity and functionality.
+                This t-shirt not only represents those principles but also feels
+                great to wear. It's evident that the designer poured their
+                creativity into making this t-shirt stand out."
+              </p>
+              <p class="review-date">Posted on August 17, 2023</p>
+            </div>
+
+            <div class="review-box">
+              <div class="star-row">
+                <div class="review-stars">
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/star.png" alt="star" />
+                </div>
+                <button class="btn-options">...</button>
+              </div>
+
+              <div class="review-author">
+                <span>Liam K.</span>
+                <img
+                  src="./assets/imgs/image.png"
+                  alt="verified"
+                  class="check-icon"
+                />
+              </div>
+              <p class="review-text">
+                "This t-shirt is a fusion of comfort and creativity. The fabric
+                is soft, and the design speaks volumes about the designer's
+                skill. It's like wearing a piece of art that reflects my passion
+                for both design and fashion."
+              </p>
+              <p class="review-date">Posted on August 18, 2023</p>
+            </div>
+
+            <div class="review-box">
+              <div class="star-row">
+                <div class="review-stars">
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/star.png" alt="star" />
+                  <img src="./assets/imgs/2Star.png" alt="str" />
+                </div>
+                <button class="btn-options">...</button>
+              </div>
+
+              <div class="review-author">
+                <span>Ava H.</span>
+                <img
+                  src="./assets/imgs/image.png"
+                  alt="verified"
+                  class="check-icon"
+                />
+              </div>
+              <p class="review-text">
+                "I'm not just wearing a t-shirt; I'm wearing a piece of design
+                philosophy. The intricate details and thoughtful layout of the
+                design make this shirt a conversation starter."
+              </p>
+              <p class="review-date">Posted on August 19, 2023</p>
+            </div>
+            <!-- More review-box divs go here -->
+          </div>
+
+          <button class="btn-load-more">Load More Reviews</button>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="faqs"
+          role="tabpanel"
+          aria-labelledby="faqs-tab"
+        >
+          <p>Frequently asked questions about the product go here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="arrivals also-like">
+      <h2 class="product-section-title">YOU MIGHT ALSO LIKE</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/imgs/2.png" alt="Polo with Contrast Trims" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Polo with Contrast Trims</div>
+            <div class="product-rating">
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+              <span class="rating-score">4.5/</span
+              ><span class="rating-max">5</span>
+            </div>
+            <div class="product-price">
+              <span>$212</span><span class="product-price-old">$242</span
+              ><span class="product-price-sale"> -20%</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/imgs/3.png" alt="Gradient Graphic T-Shirt" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Gradient Graphic T-Shirt</div>
+            <div class="product-rating">
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+              <span class="rating-score">4.5/</span
+              ><span class="rating-max">5</span>
+            </div>
+            <div class="product-price">
+              <span>$145</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/imgs/0.png" alt="Polo with Tipping Details" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Polo with Tipping Details</div>
+            <div class="product-rating">
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+              <span class="rating-score">4.5/</span
+              ><span class="rating-max">5</span>
+            </div>
+            <div class="product-price">
+              <span>$180</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/imgs/4.png" alt="Black Striped T-Shirt" />
+          </div>
+          <div class="product-info">
+            <div class="product-title">Black Striped T-Shirt</div>
+            <div class="product-rating">
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/star.png" alt="star" class="star" />
+              <img src="./assets/imgs/2Star.png" alt="star" class="star" />
+              <span class="rating-score">4.5/</span
+              ><span class="rating-max">5</span>
+            </div>
+            <div class="product-price">
+              <span>$120</span><span class="product-price-old">$160</span
+              ><span class="product-price-sale"> -30%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-top-content">
+          <div class="footer-top-left">
+            <h2 class="footer-top-title">
+              STAY UPTO DATE ABOUT <br />OUR LATEST OFFERS
+            </h2>
+          </div>
+          <form class="footer-top-right" autocomplete="off">
+            <div class="input-wrapper">
+              <i class="fa-regular fa-envelope"></i>
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+            <button type="submit">Subscribe to Newsletter</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-main">
+          <div class="footer-column logo-section">
+            <h3 class="footer-logo">SHOP.CO</h3>
+            <p>
+              We have clothes that suits your style and <br />
+              which you’re proud to wear. From <br />
+              women to men.
+            </p>
+            <div class="footer-socials">
+              <img src="./assets/imgs/SOCIAL.png" alt="Socials" />
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="#">Customer Support</a></li>
+              <li><a href="#">Delivery Details</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>FAQ</h4>
+            <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Manage Deliveries</a></li>
+              <li><a href="#">Orders</a></li>
+              <li><a href="#">Payments</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Free eBooks</a></li>
+              <li><a href="#">Development Tutorial</a></li>
+              <li><a href="#">How to - Blog</a></li>
+              <li><a href="#">Youtube Playlist</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-credit">
+        <p>Shop.co © 2020-2025, All Rights Reserved</p>
+        <div class="footer-payment">
+          <img src="./assets/imgs/card.png" alt="Payment methods" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- boostrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
