@@ -104,8 +104,8 @@ body {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  padding-bottom: 15px;
   object-fit: cover;
+  padding-bottom: 15px;
 }
 .button-play {
   position: absolute;

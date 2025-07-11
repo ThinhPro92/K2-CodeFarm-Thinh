@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        position: relative;
+        text-align: center;
+      }
+
+      p::after {
+        position: absolute;
+        content: "";
+        border: 1px solid black;
+        top: 50%;
+        right: 40%;
+        width: 50px;
+      }
+      p::before {
+        position: absolute;
+        content: "";
+        border: 1px solid black;
+        top: 50%;
+        left: 40%;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <p>text</p>
+      </div>
+    </div>
+  </body>
+</html>

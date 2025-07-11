@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: grid;
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-rows: 100px minmax(400px, auto) minmax(200px, auto) 100px;
+        gap: 10px;
+      }
+      body > * {
+        border: 1px solid rgb(13, 13, 13);
+        background-color: greenyellow;
+      }
+      header,
+      footer {
+        grid-column: 1/4;
+      }
+      #side-bar {
+        grid-row: 2/4;
+      }
+      #section1 {
+        grid-column: 2/4;
+      } */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "side-bar section1 section1"
+          "side-bar section2 section3"
+          "footer footer footer";
+        gap: 10px;
+      }
+      body > * {
+        border: 1px solid rgb(13, 13, 13);
+        background-color: greenyellow;
+      }
+      header {
+        grid-area: header;
+      }
+      #side-bar {
+        grid-area: side-bar;
+      }
+      #section1 {
+        grid-area: section1;
+      }
+      #section2 {
+        grid-area: section2;
+      }
+      #section3 {
+        grid-area: section3;
+      }
+      footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <div id="side-bar">Side Bar</div>
+    <section id="section1">Section1</section>
+    <section id="section2">Section2</section>
+    <section id="section3">Section3</section>
+    <footer>Footer</footer>
+  </body>
+</html>

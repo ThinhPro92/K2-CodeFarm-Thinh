@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(221, 142, 24);
+        transition: all 0.5s ease-in-out;
+      }
+
+      div:nth-child(1) {
+        transform: translate(-20px, 20px);
+      }
+      div:nth-child(2) {
+        transform: scale(1.4);
+      }
+      div:nth-child(3) {
+        transform: skew(30deg);
+      }
+      div:nth-child(4) {
+        transform: skew(-30deg);
+      }
+      div:nth-child(5) {
+        transform: rotate(45deg);
+      }
+      img {
+        transform: translateX(-50%);
+      }
+      div:hover {
+        transform: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquid
+    </div>
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquid
+    </div>
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquid
+    </div>
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquid
+    </div>
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquid
+    </div>
+
+    <img
+      src="../Task02/c7a0f825e28bb94d634d0d5ebbf050046f4663d2.png"
+      width="400px"
+      alt="sad"
+    />
+  </body>
+</html>

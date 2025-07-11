@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orbit without Orbit Container</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f0f0f0;
+      }
+
+      .sun {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        border-radius: 50%;
+        position: relative;
+      }
+
+      .planet {
+        width: 30px;
+        height: 30px;
+        background-color: blue;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: rotate(0deg) translateX(120px);
+        animation: rotatePlanet 5s linear infinite;
+      }
+
+      @keyframes rotatePlanet {
+        0% {
+          transform: rotate(0deg) translateX(120px);
+        }
+        100% {
+          transform: rotate(360deg) translateX(120px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sun">
+      <div class="planet"></div>
+    </div>
+  </body>
+</html>

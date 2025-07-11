@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .chess-map {
+        width: 400px;
+        height: 400px;
+      }
+      .row {
+        width: 100%;
+      }
+      .row > button {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        border: none;
+      }
+      .row:nth-child(odd) > button:nth-child(odd) {
+        background-color: brown;
+      }
+      .row:nth-child(odd) > button:nth-child(even) {
+        background-color: black;
+      }
+      .row:nth-child(even) > button:nth-child(odd) {
+        background-color: black;
+      }
+      .row:nth-child(even) > button:nth-child(even) {
+        background-color: brown;
+      }
+      button:hover {
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chess-map">
+      <div class="row">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+      <div class="row">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+      <div class="row">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+      <div class="row">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+      <div class="row">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+      <div class="row">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+      <div class="row">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+      <div class="row">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+    </div>
+  </body>
+</html>
