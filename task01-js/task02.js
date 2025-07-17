@@ -1,7 +1,7 @@
 function swapNumber(a, b) {
-  b = a * b; //15
-  a = b / a; // 5
-  b = b / a;
+  a = a + b;
+  b = a - b;
+  a = a - b;
   console.log("hoan doi cho nhau: ");
   console.log("a = " + a);
   console.log("b = " + b);

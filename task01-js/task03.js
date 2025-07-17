@@ -1,6 +1,19 @@
 function sortNumber(a, b, c) {
-  c = a * c; // 3
-  a = a / c; // 1
+  if (a > b) {
+    a = a + b;
+    b = a - b;
+    a = a - b;
+  }
+  if (a > c) {
+    a = a + c;
+    c = a - c;
+    a = a - c;
+  }
+  if (b > c) {
+    b = b + c;
+    c = b - c;
+    b = b - c;
+  }
   console.log("a = " + a);
   console.log("b = " + b);
   console.log("c = " + c);

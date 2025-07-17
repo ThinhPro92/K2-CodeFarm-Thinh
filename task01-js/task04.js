@@ -5,12 +5,12 @@ function isTriangle() {
   let c = Number(prompt("Nhap vao canh c:"));
   if (isNaN(a) || isNaN(b) || isNaN(c) || a <= 0 || b <= 0 || c <= 0) {
     console.log("a, b, c khong hop le");
-    return;
+    return false;
   }
   if (a + b > c && a + c > b && b + c > a) {
-    console.log("Chuan tam giac");
+    return true;
   } else {
-    console.log("Deck phai tam giac");
+    return false;
   }
 }
-isTriangle();
+console.log(isTriangle());
