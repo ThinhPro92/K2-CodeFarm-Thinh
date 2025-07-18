@@ -1,7 +1,7 @@
 // Input 1:
 // printChristmasTree(5, "*");
-function printChristmasTree(n, kieu) {
-  if (!Number(n) || n <= 0 || n >= 50) {
+function printChristmasTree(n, character) {
+  if (!Number(n) || n <= 0 || n >= 100) {
     console.log("n khong dung kieu du lieu hoac khong hop le");
     return;
   }
@@ -11,7 +11,7 @@ function printChristmasTree(n, kieu) {
       vuong += " ";
     }
     for (let p = 1; p <= 2 * i - 1; p++) {
-      vuong += kieu;
+      vuong += character;
     }
     console.log(vuong);
   }
@@ -19,12 +19,12 @@ function printChristmasTree(n, kieu) {
   for (let j = 1; j <= n - 1; j++) {
     gocCay += " ";
   }
-  gocCay += kieu;
+  gocCay += character;
   console.log(gocCay);
 }
 let n = Number(prompt("Nhap vao chieu cao cay:"));
-let kieu = prompt("Nhap 1 chu cai kieu duLieu:");
-printChristmasTree(n, kieu);
+let character = prompt("Nhap 1 chu cai kieu duLieu:");
+printChristmasTree(n, character);
 // Output 1:
 
 //     *
