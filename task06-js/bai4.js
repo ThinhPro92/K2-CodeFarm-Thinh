@@ -1,14 +1,59 @@
 // Input:
 function findMinMaxAverage(arr) {
-  if (arr.length === 0) return null;
+  if (arr.length === 0) {
+    console.log("Mảng rỗng");
+    return;
+  }
 
-  var max = arr[0];
-  var min = arr[0];
-  var maxIndex = 0;
-  var minIndex = 0;
+  let max = arr[0];
+  let min = arr[0];
+  let maxIndex = 0;
+  let minIndex = 0;
 
-  var primeSum = 0;
-  var primeCount = 0;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+      maxIndex = i;
+    }
+    if (arr[i] < min) {
+      min = arr[i];
+      minIndex = i;
+    }
+  }
+
+  function isPrime(n) {
+    if (n < 2) return false;
+    for (let i = 2; i <= n - 1; i++) {
+      if (n % i === 0) return false;
+    }
+    return true;
+  }
+
+  // Tinh tbc so nguyen to
+  let sum = 0;
+  let count = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (isPrime(arr[i])) {
+      sum += arr[i];
+      count++;
+    }
+  }
+
+  let primeAverage;
+  if (count === 0) {
+    primeAverage = null;
+  } else {
+    primeAverage = parseFloat((sum / count).toFixed(2));
+  }
+
+  return {
+    max,
+    maxIndex,
+    min,
+    minIndex,
+    primeAverage,
+  };
 }
 
 // Output:
