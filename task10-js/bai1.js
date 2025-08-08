@@ -13,4 +13,4 @@ function convertArrayToObject(array) {
 }
 
 // Output:
-convertArrayToObject(arrayString); // { name: 'John', age: '30', city: 'NY' }
+console.log(convertArrayToObject(arrayString)); // { name: 'John', age: '30', city: 'NY' }
