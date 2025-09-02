@@ -16,7 +16,7 @@ let html = `
   ${students
     .map(
       (st) => `
-    <tr>
+    <tr style=" color: rgb(224, 149, 11)">
       <td>${st.id}</td>
       <td>${st.name}</td>
       <td>${st.age}</td>
