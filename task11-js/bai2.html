@@ -1,0 +1,41 @@
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập DOM: Hiển thị dữ liệu ra bảng bằng chuỗi</title>
+    <style>
+      /* CSS cơ bản để bảng dễ nhìn */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      table {
+        border-collapse: collapse;
+        margin: auto;
+        min-width: 500px;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+      th {
+        background-color: #f2f2f2;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      th:hover {
+        background-color: #509ada;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="dataTable"></table>
+  </body>
+  <script src="bai2.js"></script>
+</html>
