@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "title": "iphone 11",
+      "price": 487023,
+      "quantity": 1,
+      "id": 2
+    },
+    {
+      "title": "dsd",
+      "price": 228000,
+      "quantity": 2,
+      "id": 3
+    },
+    {
+      "title": "ds",
+      "price": "213",
+      "quantity": 2,
+      "id": 4
+    },
+    {
+      "title": "12f",
+      "price": 233,
+      "quantity": 1,
+      "id": 5
+    },
+    {
+      "title": "32df",
+      "price": 2343,
+      "quantity": 23,
+      "id": 6
+    }
+  ]
+}

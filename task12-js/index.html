@@ -4,38 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Day 26</title>
-    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <form id="product-form">
-      <div class="form-group">
-        <label for="">Title</label>
-        <input type="text" id="title" name="title" />
+  <body class="bg-gray-50 p-6">
+    <!-- Form thêm sản phẩm -->
+    <form
+      id="product-form"
+      class="max-w-md mx-auto mb-6 bg-white p-6 rounded-2xl shadow"
+    >
+      <div class="mb-4">
+        <label class="block font-semibold mb-1">Title</label>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400"
+        />
       </div>
 
-      <div class="form-group">
-        <label for="">Price</label>
-        <input type="number" id="price" name="price" />
+      <div class="mb-4">
+        <label class="block font-semibold mb-1">Price</label>
+        <input
+          type="number"
+          id="price"
+          name="price"
+          class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400"
+        />
       </div>
 
-      <div class="form-group">
-        <button class="btn-primary">Submit</button>
+      <div class="mb-4">
+        <label class="block font-semibold mb-1">Quantity</label>
+        <input
+          type="number"
+          id="quantity"
+          name="quantity"
+          value="1"
+          min="1"
+          class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400"
+        />
       </div>
+
+      <button
+        class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg"
+      >
+        Submit
+      </button>
     </form>
 
-    <table>
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Title</th>
-          <th>Price</th>
-          <th>
-            <button onclick="" class="btn-primary">+ Add new</button>
-          </th>
-        </tr>
-      </thead>
-      <tbody id="products"></tbody>
-    </table>
+    <!-- Bảng hiển thị sản phẩm -->
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow">
+        <thead class="bg-blue-100">
+          <tr class="text-left">
+            <th class="p-3">ID</th>
+            <th class="p-3">Title</th>
+            <th class="p-3">Price</th>
+            <th class="p-3">Quantity</th>
+            <th class="p-3">Total</th>
+            <th class="p-3">
+              <button
+                class="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-lg"
+                id="add-new"
+              >
+                + Add new
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody id="products"></tbody>
+      </table>
+    </div>
+
+    <div class="max-w-md mx-auto mt-4 text-right font-semibold text-lg">
+      Tổng cộng: <span id="total-amount" class="text-blue-600">0</span> ₫
+    </div>
+
+    <!-- ⚠️ Thêm axios trước khi load index.js -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

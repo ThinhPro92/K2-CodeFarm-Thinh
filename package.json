@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "json-server": "^0.17.0"
+  },
+  "name": "js-code-farm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "json-server --watch db.json --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThinhPro92/K2-CodeFarm-Thinh.git"
+  },
+  "author": "ThinhPro92",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThinhPro92/K2-CodeFarm-Thinh/issues"
+  },
+  "homepage": "https://github.com/ThinhPro92/K2-CodeFarm-Thinh#readme",
+  "description": ""
+}
